@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(69, 69, 69);
+    font: 13pt Arial;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+}
