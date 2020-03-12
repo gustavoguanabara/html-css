@@ -7,9 +7,12 @@
 </head>
 <body>
     <h1>Imagens dinâmicas (pictures)</h1>
-    <p>Nesse exercício você vai ter que aumentar e diminuir o tamanho do seu navegador.</p>
+    <p>Veja que a imagem se adapta ao tamanho do navegador.</p>
     <picture>
-        
+        <source media="(max-width: 600px)" srcset="imagens/bicicleta.png">
+        <source media="(max-width: 1100px)" srcset="imagens/carro.png">
+        <img src="imagens/caminhao.png" alt="Escolha seu veículo">
     </picture>
+    <p>Aumente e diminua o tamanho do seu navegador.</p>
 </body>
 </html>
