@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<!-- Usando estilos localizados em outros arquivos (externo) -->
+<!-- Usando CSS Interno -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS external</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CSS Interno</title>
+    <style>
+        /* Um CSS Interno fica dentro da tag <style> na área de <head> de um site */
+        /* Comentários em CSS estão entre esses símbolos aqui */
+
+        body { /* isso aqui se chama SELETOR */
+            background-color: wheat; /* esse conjunto aqui se chama propriedade: valor */
+            font: 12pt Arial;
+        }
+
+        h1 {
+            background-color: sienna;
+            color: white;
+        }
+
+        p {
+            color: sienna; /* dessa maneira, todos os parágrafos recebem essa mesma configuração! Fica mais fácil! */
+        }
+
+        mark {
+            background-color: brown;
+            color: lightsalmon;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>CSS External</h1>
-    <p>Um CSS externo, como o próprio nome sugere, está fora do nosso documento! Analise aí o código fonte da página e veja o que foi feito na linha 8, dentro da área <code>&lt;head&gt;</code>.</p>
-    <p>As principais vantagens no uso desse método são:</p>
-    <ul>
-        <li>Como o arquivo está externo, o seu conteúdo (HTML5) fica separado do estilo (CSS3). Isso deixa tudo mais organizado.</li>
-        <li>Um mesmo arquivo de estilo pode ser usado em várias páginas do meu site. Eu preparei uma &#x1F449;<a href="pagina2.html"> segunda página aqui</a> &#x1F448; que usa o mesmo estilo.</li>
-    </ul>
+    <h1>CSS Internal</h1>
+    <p>Um estilo interno é aquele que fica configurado dentro da área <code>&lt;head&gt;</code> do seu documento</p>
+    <p>A grande <mark>vantagem</mark> dessa maneira em relação do modelo <em>inline</em> é que podemos escrever uma configuração única para todos os elementos da mesma família. Por exemplo, todos os parágrafos desse documento estão com a mesma configuração de cor e eu só escrevi isso uma vez.</p>
+    <p>A grande <mark>desvantagem</mark> dessa técnica em relação ao uso de um CSS externo (veja o próximo exercício também) é que o estilo não pode ser reaproveitado por outras páginas.</p>
+    <p><strong style="color: darkred;">IMPORTANTE:</strong> Você pode misturar CSS inline e CSS internal em um mesmo documento sem problemas! Olha só o código fonte dessa página no seu navegador!</p>
 </body>
 </html>
