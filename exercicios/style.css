@@ -20,6 +20,21 @@ h2 {
     color: rgb(125, 92, 8);
 }
 
+aside {
+    display: block; 
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+aside img {
+    width: 100px; 
+    display: block; 
+    float: left;
+    margin-right: 10px;
+}
+
 a, a:visited {
     color: rgb(34, 34, 34);
     font-weight: bolder;
