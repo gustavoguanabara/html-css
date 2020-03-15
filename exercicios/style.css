@@ -22,6 +22,8 @@ h2 {
 
 aside {
     display: block; 
+    font-size: 10pt;
+    text-align: justify;
     background-color: rgb(222, 222, 222);
     padding: 10px;
     border-radius: 10px;
