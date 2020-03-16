@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font: 15pt Arial;
+    color: black;
+}
+
+div {
+    width: 90%;
+    height: 400px;
+    margin: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+div#area001 {
+    background-image: url('pattern001.png');
+    background-repeat: repeat;
+}
+
+div#area002 {
+    background-image: url('pattern002.png');
+    background-repeat: repeat-x;
+}
+
+div#area003 {
+    background-image: url('pattern003.png');
+    background-repeat: repeat-y;
+}
+
+div#area004 {
+    background-image: url('pattern004.png');
+    background-repeat: no-repeat;
+}
