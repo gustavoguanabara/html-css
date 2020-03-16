@@ -25,15 +25,19 @@
 </head>
 <body>
     <h1>Papel de Parede com CSS</h1>
-    <p>A imagem que está aparecendo aqui no fundo está sendo repetida continuamente, tanto no sentido vertical quanto horizontal. Estamos usando a propriedade background-image das CSS junto com a função interna da linguagem chamada url(). </p>
+    <p>Ao configurar um <code>background-image</code>, podemos usar a propriedade <code>background-repeat</code> para dizer se ele vai se repetir caso o container seja maior que o tamanho da imagem. O padrão é o valor <code>repeat</code>, mas existem outras opções: </p>
 
-    <h2>Fundo com repeat</h2>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
     <div id="area001"></div>
-    <h2>Fundo com repeat-x</h2>
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
     <div id="area002"></div>
-    <h2>Fundo com repeat-y</h2>
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
     <div id="area003"></div>
-    <h2>Fundo com no-repeat</h2>
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
     <div id="area004"></div>
 </body>
 </html>
