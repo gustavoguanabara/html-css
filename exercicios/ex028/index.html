@@ -19,14 +19,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papel de parede</title>
+    <title>Imagens e Textos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Background com propriedade shorthand CSS</h1>
+    <h1>Imagens e Textos</h1>
 
-    <p>Tente aumentar e diminuir o tamanho do seu navegador em todas as direções. Você vai perceber que o fundo vai se adaptar para que ele cubra todo o espaço útil da tela. Obtivemos esse resultado usando o parâmetro <code>background-size</code> com o valor <code>cover</code> (cobrir).</p>
+    <p>Vamos ver as opções de alinhamento vertical entre textos e imagens. É importante explicar que esse alinhamento só acontece se o box e o texto estiverem em uma mesma sequência. Se por acaso o texto estiver em um parágrafo, por exemplo, o conteúdo aparecerá abaixo (veja o último exemplo).</p>
+    <p>
+        <img src="imagens/github.png" style="vertical-align: baseline;"> vertical-align: baseline;
+    </p>
+    <p>
+        <img src="imagens/github.png" style="vertical-align: middle;"> vertical-align: middle;
+    </p>
+    <p>
+        <img src="imagens/github.png"  style="vertical-align: top;"> vertical-align: top;
+    </p>
+    <p>
+        <img src="imagens/github.png"  style="vertical-align: top;"><p>Era pra ser top, mas não funciona.</p>
+    </p>
 
-    <p>O resultado visual desse exercício é exatamente o mesmo do anterior, mas a configuração das CSS foi mais simplificada, usando shorthands. Dá uma olhada lá no arquivo <code>style.css</code> dessa pasta.</p>
 </body>
 </html>
