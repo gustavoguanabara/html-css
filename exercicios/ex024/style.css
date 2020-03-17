@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    font: 13pt Arial;
+    color: black;
+}
+
