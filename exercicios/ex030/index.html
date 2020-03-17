@@ -46,6 +46,11 @@
             color: yellow;
         }
 
+        a.especial:link, a.especial:visited { /* perceba que o link especial também vai herdar as coisas do link normal, como não ficar sublinhado. Mas a cor será atualizada */
+            color: black;
+        }
+
+
     </style>
 </head>
 <body>
@@ -55,6 +60,7 @@
     <ul>
         <li><a href="https://www.youtube.com/user/cursosemvideo" target="_blank">Visite o canal do CursoemVideo</a></li>
         <li><a href="https://www.estudonauta.com" target="_blank">Visite o site do Estudonauta</a></li>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Este é um link especial</a> (vai sempre ficar preto)</li>
     </ul>
 </body>
 </html>
