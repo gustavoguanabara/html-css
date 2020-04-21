@@ -15,6 +15,7 @@
 -->
 
 <!DOCTYPE html>
+<!-- Usando estilos localizados em outros arquivos (externo) -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -23,10 +24,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Background com propriedade shorthand CSS</h1>
+    <h1>Posição do background</h1>
+    <p>Ao configurar um <code>background-image</code> e usar um método específico de <code>background-repeat</code> dá pra escolher a posição que a imagem vai ficar dentro do objeto: </p>
 
-    <p>Tente aumentar e diminuir o tamanho do seu navegador em todas as direções. Você vai perceber que o fundo vai se adaptar para que ele cubra todo o espaço útil da tela. Obtivemos esse resultado usando o parâmetro <code>background-size</code> com o valor <code>cover</code> (cobrir).</p>
-
-    <p>O resultado visual desse exercício é exatamente o mesmo do anterior, mas a configuração das CSS foi mais simplificada, usando shorthands. Dá uma olhada lá no arquivo <code>style.css</code> dessa pasta.</p>
+    <h2>background-position: top left;</h2>
+    <div id="area001"></div>
+    <h2>background-position: bottom right;</h2>
+    <div id="area002"></div>
+    <h2>background-position: center top;</h2>
+    <div id="area003"></div>
+    <h2>background-position: center center;</h2>
+    <div id="area004"></div>
 </body>
 </html>

@@ -1,0 +1,7 @@
+body {
+    background: rgb(255, 255, 255) url('fundo.jpg') repeat-y scroll top center; /* Essa linha simplificou o uso, pois uniu as propriedades background-color, background-image, background-repeat, background-attachment e background-position (nessa ordem) */
+    background-size: cover;
+    font: 13pt Arial; /* Esse também já é um shorthand para font-size e font-family (nessa ordem) */
+    color: black;
+}
+

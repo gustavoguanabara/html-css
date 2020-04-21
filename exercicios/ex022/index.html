@@ -21,41 +21,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+        @font-face {
+            font-family: 'Minha Fonte';
+            src: url('littlebird.ttf');
+        }
         body {
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 15pt;
         }
 
-        p.linhadupla {
-            line-height: 2em; /* a medida "em" é relativa ao tamanho da fonte atual. Sendo assim, 2em significa o dobro do valor atual de tamanho. */
+        h2 {
+            font-weight: normal; /* serve para tirar o negrito dos títulos */
         }
 
-        p.palavradupla {
-            word-spacing: 1em;
+        h2#padrao {
+            font-family: Arial, Helvetica, sans-serif; /* O navegador vai tentar carregar a primeira, se não funcionar, passa pra próxima */
         }
 
-        p.letradupla {
-            letter-spacing: 0.5em;
+        h2#google {
+            font-family: 'Pacifico', cursive; /* A importação dessa fonte aconteceu na linha 8 */
         }
 
+        h2#local {
+            font-family: 'Minha Fonte', sans-serif; /* Fonte local importada da linha 9 até 12 */
+        }
     </style>
 </head>
 <body>
-    <h1>Espaçamentos de texto</h1>
-
-    <p>Os parágrafos a seguir vão ter formatações de espaçamento diferentes usando as propriedades <code>line-height</code>, <code>letter-spacing</code> e <code>word-spacing</code>. Não se esqueça que é possível misturar todas essas configurações em um único seletor. Só fiz tudo separado para você conseguir entender melhor o resultado visual de cada um deles.</p>
-
-    <h2>Parágrafo normal, sem nenhuma formatação especial</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit urna id orci dignissim dictum. Proin eget nisl ligula. Integer rhoncus elementum elit, sit amet tempor tellus cursus sed. Quisque venenatis aliquet libero ut rutrum. Donec tempus dolor purus, at blandit leo tincidunt quis. Donec vitae ligula eu mi tempus sollicitudin vitae egestas quam.</p>
-
-    <h2>Parágrafo com <code>line-height</code></h2>
-    <p class="linhadupla">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit urna id orci dignissim dictum. Proin eget nisl ligula. Integer rhoncus elementum elit, sit amet tempor tellus cursus sed. Quisque venenatis aliquet libero ut rutrum. Donec tempus dolor purus, at blandit leo tincidunt quis. Donec vitae ligula eu mi tempus sollicitudin vitae egestas quam.</p>
-
-    <h2>Parágrafo com <code>word-spacing</code></h2>
-    <p class="palavradupla">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit urna id orci dignissim dictum. Proin eget nisl ligula. Integer rhoncus elementum elit, sit amet tempor tellus cursus sed. Quisque venenatis aliquet libero ut rutrum. Donec tempus dolor purus, at blandit leo tincidunt quis. Donec vitae ligula eu mi tempus sollicitudin vitae egestas quam.</p>
-
-    <h2>Parágrafo com <code>letter-spacing</code></h2>
-    <p class="letradupla">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit urna id orci dignissim dictum. Proin eget nisl ligula. Integer rhoncus elementum elit, sit amet tempor tellus cursus sed. Quisque venenatis aliquet libero ut rutrum. Donec tempus dolor purus, at blandit leo tincidunt quis. Donec vitae ligula eu mi tempus sollicitudin vitae egestas quam.</p>
-    
+    <h1>Fontes em CSS</h1>
+    <h2 id="padrao">Podemos configurar fontes padrão do sistema</h2>
+    <h2 id="google">Ou então usar uma fonte do Google Fonts</h2>
+    <h2 id="local">Ou ainda usar um arquivo local de fontes</h2>
 </body>
 </html>

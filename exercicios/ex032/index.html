@@ -1,0 +1,66 @@
+<!--
+    ## IMPORTANTE ##
+    Você tem todo o direito de usar esse material 
+    para seu próprio aprendizado. Professores também 
+    podem ter acesso a todo o conteúdo e usá-los com 
+    seus alunos. Porém todos os que usarem esse 
+    material - seja para qual for a finalidade - deverão 
+    manter a referência ao material original, disponível 
+    em https://github.com/gustavoguanabara/html-css. Este 
+    material não poderá ser utilizado em nenhuma hipótese 
+    para ser replicada - integral ou parcialmente - 
+    por autores/editoras/instituições para criar livros 
+    ou apostilas, com finalidades de obter ganho financeiro 
+    com ele.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando links</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font: 15pt Arial;
+        }
+
+        a:link { /* link normal, ainda não visitado */
+            font-weight: bold;
+            text-decoration: none;
+            color: darkorange;
+        }
+
+        a:visited { /* link visitado, herda também as propriedades do :link */
+            color: darkred;
+        }
+
+        a:hover { /* quando passamos o mouse sobre o link. Herda também as propriedades do :link */
+            color: orange;
+            text-decoration: underline;
+        }
+
+        a:active { /* link ativo. Apresentado no momento em que clicamos nele. */
+            color: yellow;
+        }
+
+        a.especial:link, a.especial:visited { /* perceba que o link especial também vai herdar as coisas do link normal, como não ficar sublinhado. Mas a cor será atualizada */
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Formatação de links</h1>
+
+    <p>Por padrão, os links são textos azuis e sublinhados. Depois de visitados, ficam da roxos quando já foram visitados. Mas podemos personalizar isso usando pseudoclasses das CSS.</p>
+    <ul>
+        <li><a href="https://www.youtube.com/user/cursosemvideo" target="_blank">Visite o canal do CursoemVideo</a></li>
+        <li><a href="https://www.estudonauta.com" target="_blank">Visite o site do Estudonauta</a></li>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Este é um link especial</a> (vai sempre ficar preto)</li>
+    </ul>
+</body>
+</html>

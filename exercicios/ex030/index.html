@@ -19,48 +19,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatando links</title>
-    <style>
-        body {
-            background-color: white;
-            color: black;
-            font: 15pt Arial;
-        }
-
-        a:link { /* link normal, ainda não visitado */
-            font-weight: bold;
-            text-decoration: none;
-            color: darkorange;
-        }
-
-        a:visited { /* link visitado, herda também as propriedades do :link */
-            color: darkred;
-        }
-
-        a:hover { /* quando passamos o mouse sobre o link. Herda também as propriedades do :link */
-            color: orange;
-            text-decoration: underline;
-        }
-
-        a:active { /* link ativo. Apresentado no momento em que clicamos nele. */
-            color: yellow;
-        }
-
-        a.especial:link, a.especial:visited { /* perceba que o link especial também vai herdar as coisas do link normal, como não ficar sublinhado. Mas a cor será atualizada */
-            color: black;
-        }
-
-
-    </style>
+    <title>Imagens e Textos</title>
 </head>
-<body>
-    <h1>Formatação de links</h1>
+<body style="font: 13pt Arial;">
+    <h1>Imagens e Textos</h1>
 
-    <p>Por padrão, os links são textos azuis e sublinhados. Depois de visitados, ficam da roxos quando já foram visitados. Mas podemos personalizar isso usando pseudoclasses das CSS.</p>
-    <ul>
-        <li><a href="https://www.youtube.com/user/cursosemvideo" target="_blank">Visite o canal do CursoemVideo</a></li>
-        <li><a href="https://www.estudonauta.com" target="_blank">Visite o site do Estudonauta</a></li>
-        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Este é um link especial</a> (vai sempre ficar preto)</li>
-    </ul>
+    <p>Vamos ver as opções de alinhamento vertical entre textos e imagens. É importante explicar que esse alinhamento só acontece se o box e o texto estiverem em uma mesma sequência. Se por acaso o texto estiver em um parágrafo, por exemplo, o conteúdo aparecerá abaixo (veja o último exemplo).</p>
+    <p>
+        <img src="imagens/github.png" style="vertical-align: baseline;"> vertical-align: baseline;
+    </p>
+    <p>
+        <img src="imagens/github.png" style="vertical-align: middle;"> vertical-align: middle;
+    </p>
+    <p>
+        <img src="imagens/github.png"  style="vertical-align: top;"> vertical-align: top;
+    </p>
+    <p>
+        <img src="imagens/github.png"  style="vertical-align: top;"><p>Era pra ser top, mas não funciona.</p>
+    </p>
+
 </body>
 </html>
