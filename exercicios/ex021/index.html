@@ -15,46 +15,64 @@
 -->
 
 <!DOCTYPE html>
-<!-- Os IDs identificam elementos na página. Não é permitido que dois elementos tenham um mesmo ID em um mesmo documento HTML, fica ligadinho(a) aí! -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificação em CSS</title>
+    <title>Fontes em CSS</title>
     <style>
-        div {
-            display:inline-block; /* exibe uma div ao lado da outra, em linha */
-            width: 200px; /* largura do bloco */
-            height: 200px; /* altura do bloco */
-            background-color: lightgray;
-            border: 1px solid black; /* borda do bloco */
+        body {
+            font-size: 15pt;
         }
 
-        div#area01 { /* configurações exclusivas do elemento com ID "area01" */
-            background-color: darkred;
+        span.negrito {
+            font-weight: bolder;
+        }
+        
+        span.italico {
+            font-style: italic; /* também pode usar a palavra oblique no lugar de italic */
         }
 
-        #area02 { /* não é necessário colocar o nome da tag, basta o ID */
-            background-color: darkolivegreen;
+        span.maius {
+            text-transform: uppercase;
         }
 
-        div#area03, div#area05 { /* podemos atribuir propriedades a mais de um elemento */
-            background-color: darkblue;
+        span.minus {
+            text-transform: lowercase;
         }
 
-        /* a "area04" não teve nenhuma configuração especial, logo ficará sendo exibida como uma div comum (cinza) */
+        span.capit {
+            text-transform: capitalize; /* só afeta a primeira letra de cada palavra */
+        }
 
+        span.labaixo {
+            text-decoration: underline;
+        }
+
+        span.lacima {
+            text-decoration: overline;
+        }
+
+        span.lmeio {
+            text-decoration: line-through;
+        }
+
+        span.pisca {
+            text-decoration: blink;
+        }
     </style>
 </head>
 <body>
-    <h1>Identificadores em CSS</h1>
-    <p>No exercício anterior, vimos as <mark>classes</mark> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <mark>identificar</mark> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></p>
+    <h1>Formatações via CSS</h1>
 
-    <div id="area01"></div>
-    <div id="area02"></div>
-    <div id="area03"></div>
-    <div id="area04"></div>
-    <div id="area05"></div>
+    <p>Dessa vez, vamos usar tags <code>&lt;span&gt;</code> com classes específicas que vão gerar formatações especiais. Acompanhe sempre o código-fonte da página.</p>
 
+    <p>Podemos colocar <span class="negrito">uma parte do texto em negrito</span> usando CSS com a propriedade <code>font-weight</code>, apesar de que é possível usar <code>&lt;b&gt;</code> e <code>&lt;strong&gt;</code> para fazer isso diretamente pelo HTML.</p>
+
+    <p>Podemos também fazer <span class="italico">uma parte do texto em itálico</span> usando CSS com a propriedade <code>font-style</code>, apesar de que é possível usar <code>&lt;em&gt;</code> para fazer isso diretamente pelo HTML.</p>
+
+    <p>Também é possível transformar o texto com a propriedade <code>text-transform</code>, fazendo ele ficar <span class="maius">ToDo Em LeTrAs MaIúScUlAs</span>, <span class="minus">Ou EnTãO eM mInÚsCuLaS</span>, ou até <span class="capit">capitalizadas independente do conteúdo</span> usando CSS. Você só vai entender isso direito se olhar o que fiz no código-fonte.</p>
+
+    <p>E por fim, usando a propriedade <code>text-decoration</code> podemos criar uma decoração aos textos, fazendo-os ficar <span class="labaixo">com uma linha abaixo</span>, ou com uma linha <span class="lacima">acima das letras</span>, ou até mesmo <span class="lmeio"> através delas</span>, conforme a necessidade.</p>
 </body>
 </html>
