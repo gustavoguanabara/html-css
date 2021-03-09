@@ -14,10 +14,12 @@ main {
 
 h1 {
     color: darkgoldenrod;
+    border-bottom: 4px solid #9b850c;
 }
 
 h2 {
     color: rgb(125, 92, 8);
+    border-bottom: 2px solid #88b2ff;
 }
 
 aside {
