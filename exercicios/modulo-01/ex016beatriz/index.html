@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/Ergosign-World-Animal-Lion.256.png" type="image/x-icon">
+</head>
+<body>
+    <H1>Prática dos exercícios do Módulo 1 de HTML5 e CSS3 do Curso em Vídeo </H1>
+    <p>Quando eu quiser <br>quebrar uma linha sem colocar outra tag no código, preciso adicionar a tag br.</p> <!-- uma tag br para cada quebra -->
+    <p>Para adcionar símbolos como &trade; é necessário colocar  o logograma "&" antes da escrita e o sinal ";" depois, ambos sem espaço. Já para emoji, é necessário colocar "&#x" antes do código disponível no site <a href="https://emojipedia.org/" target="_blank"> emojipedia</a> . &#x1F609</p>
+    <p>Não devemos esquecer dos direitos autorais de imagens, vídeos e áudios. É necessário buscar nos lugares corretos como: <img src="img/leoa_e_filhote.jpg" alt="Foto da mãe leoa deitada com seu filhote"> <em>essa imagem foi retirada do google imagens e eu escolhi a opção de com direito criativo.</em> <img src="img/leoa_rugindo_l1500r50.jpg" alt="Leoa rugindo"> <em>já essa foto é do site <a href="https://www.pexels.com/pt-br/" target="_blank" >pexels</a></em>, também foi alterado o tamanho e resolução pelo <a href="https://www.gimp.org/" target="_blank">Gimp.</a></p>
+    <p>A tag <mark>mark</mark> é um marca texto.Já a <small>small</small> é para letras miúdas.Também tem a <del>del</del> para palavras deletadas. <ins>ins</ins> para texto inserido. Como tantas outras, exemplo: sup- sobrescrito, sub- subscrito, code- código fonte, pre- formatação, q- citação simples, blockquote- citação site, abdr- abreviação.</p> 
+    <p>Podemos fazer listas não ordenadas com a tag ul e para ordenadas com ol. Veja:</p>
+    <ul>
+        <li>Oi</li>
+        <li>tudo</li>
+        <li>bem</li>
+        <li>?</li>
+    </ul>
+    <ol>
+        <li>Sim</li>
+        <li>e</li>
+        <li>com</li>
+        <li>você</li>
+        <li>?</li>
+    </ol>
+    <p>É possivel mudar a ordem dos números, trocar simbolo e fazer oura listagem dendo de uma lista.Basta usar as tags type, start.</p>
+    <p>Para links externos usamos a tag <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">a</a> e para não abrir na mesma página usamos target _blank.</p>
+    <p>Já links internos, usamos <a href="index2.html" target="_blank" rel="previous">página 2</a> para abrir em outra aba ou <a href="index2.html" target="_self">página 2</a> para abrir na mesma.</p>
+    <p>Agora, para download usamos <a href="Currículo Beatriz Cristina 2023.pdf" download="Beatriz Cristina 2023.pdf" type="application/pdf">Currículo2023</a>
+    Para colocar imagens dinamicas utilizamos as tags picture e source. Para visualizar aumente e diminue o tamanho da tela.</p>  
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imagemp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/imagemm.png" type="image/png">
+        <img src="./img/imagemg.png" alt="imagem flexível">
+    </picture>
+    <p>Para colocar áudio usamos a tag audio e a source</p> 
+    <audio>
+    <source src="../ex016beatriz/midia/My Dog Is Happy - Reed Mathis.mp3" type="audio/mpeg">
+    <source src="../ex016beatriz/midia/My Dog Is Happy - Reed Mathis.mp3" type="audio/ogg">
+    <source src="../ex016beatriz/midia/My Dog Is Happy - Reed Mathis.mp3" type="audio/way">
+   </audio preload="metadata" autoplay >
+   <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="../ex016beatriz/midia/My Dog Is Happy - Reed Mathis.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+   <p>Para colocar vídeo usamos a tag video e a source (consome dados).</p> 
+   <video width="560" poster="./img/leoa-banner.jpg" controls>
+    <source src="../ex016beatriz/video/Leoa-creator720p60.mp4" type="video/mp4">
+    <source src="../ex016beatriz/video/Leoa-creator720p60.webm" type="video/webm">
+    <source src="./video/leoa.mp4" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <a href="./video/Leoa-creator720p60.mp4"> Clique para baixar</a></p>
+   </video>
+   <p>Inserindo vídeo do Youtube (não consome dados e amplia a vizualização do site por ser a 2 plataforma mais utilizada para pesquisa).</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/yvO2a9Em-bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
