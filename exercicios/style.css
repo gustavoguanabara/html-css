@@ -14,6 +14,7 @@ main {
 
 h1 {
     color: darkgoldenrod;
+    text-align: center;
 }
 
 h2 {
@@ -44,5 +45,5 @@ a, a:visited {
 
 a:hover {
     color: darkgoldenrod;
-    text-decoration: none;
+    text-decoration: none; 
 }
