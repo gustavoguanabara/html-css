@@ -1,0 +1,13 @@
+*{
+    font-family: "Open Sans";
+}
+
+body{
+    background-color: #FFF7F8;
+    color: darkslategray;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+}
