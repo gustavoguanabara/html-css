@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none ;
+}
+
+body{
+    background-color: black;
+    color:aliceblue;
+    font-size: 16px;
+}
+
+header{
+    position:fixed;
+    width:80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+
+    & img{
+        width:50px;
+    }
+    & nav{
+        & ul{
+            display:grid;
+            grid-template-columns: repeat(3, 200px);
+
+        }
+    }
+}
+section{
+    background-image: radial-gradient(#000, #fff);
+    height: 100vh;
+    position: relative;
+}
+.arrows{
+    &button{
+       & img{
+        width: 50px;
+
+       } 
+    }
+}
