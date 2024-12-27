@@ -1,47 +1,274 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style:none ;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: black;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 16px;
+    overflow: hidden;
 }
 
-header{
-    position:fixed;
-    width:80vw;
+header {
+    position: fixed;
+    width: 80vw;
     left: 50%;
     transform: translateX(-50%);
-    display:grid;
+    display: grid;
     align-items: center;
     grid-template-columns: 1fr 600px;
     gap: 10%;
+    z-index: 2;
 
-    & img{
-        width:50px;
+    & img {
+        width: 50px;
     }
-    & nav{
-        & ul{
-            display:grid;
+
+    & nav {
+        & ul {
+            display: grid;
             grid-template-columns: repeat(3, 200px);
 
         }
     }
 }
-section{
+
+section {
     background-image: radial-gradient(#000, #fff);
     height: 100vh;
     position: relative;
-}
-.arrows{
-    &button{
-       & img{
-        width: 50px;
 
-       } 
+    & .list {
+
+        width: 70vw;
+        margin: auto;
+        height: 12px;
+        position: relative;
+
+        &.item {
+            position: absolute;
+            inset: 0;
+
+            &.moda-img {
+                position: absolute;
+                top: 10px;
+                transform: translateY(-100%);
+                width: 70%;
+
+                & img {
+                    width: 100%;
+                    transform: rotate(-30deg);
+                }
+                &::before{
+                    content: '';
+                    position:absolute;
+                    background-color: black;
+                    width: 100%;
+                    height: 100px;
+                    top: 150%;
+                    left:50px;
+                    border:50%;
+                    filter: blur(50px);
+                }
+            }
+
+            &.content {
+                position: absolute;
+                right: 100px;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                gap: 20px;
+
+                &.informaçao-roupa {
+                    font-weight: bold;
+                }
+
+                & h2 {
+                    font-size: 8em;
+                    line-height: 1em;
+                    font-family: "League Gothic", sans-serif;
+                }
+
+                &.descriçao {
+                    color: blue;
+                    font-size: 12px;
+                    text-align: right;
+                    max-width: 400px;
+                }
+
+                &.informaçao {
+                    border-radius: 30px;
+                    height: 35px;
+                    width: 120px;
+                    text-transform: uppercase;
+                    border: 2px solid #791fd3;
+                    background-color: green;
+                    color: black;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        top: 50%;
+        border-top: 1px solid #fff;
+
+    }
+}
+
+.arrows {
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+
+    &button:nth-child() {
+        &img {
+            transform: scale(-1);
+        }
+
+    }
+
+    &button {
+        top: 60%;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+
+        & img {
+            width: 100px;
+            margin-top: 4px;
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
+
+    }
+}
+
+.indicadores {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+&.number {
+    font-size: 5em;
+    font-family: "League Gothic", sans-serif;
+}
+
+& ul {
+    display: flex;
+    gap: 10px;
+
+    & li {
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: 0.5;
+    }
+
+    &,
+    ativo {
+        background-color: #fff;
+    }
+}
+
+
+section {
+    &.list {
+        --calculation: 1;
+
+        &.item {
+            transform: translateX(calc(100vw * var(--calculation)));
+            transition: 0.5s;
+            opacity: 0;
+
+            &.moda-img {
+                &.img {
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+
+                }
+            }
+
+            &.content {
+
+                &.informaçao,
+                h2,
+                .descriçao,
+                .informaçao {
+                    transform: translateX(calc(200px * var(--calculation)));
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+                    opacity: 0;
+                }
+
+                &.h2 {
+                    transition-delay: 0.5s;
+                }
+
+                &.descriçao {
+                    transition-delay: 0.5s;
+                }
+
+                &.informaçao {
+                    transition-delay: 0.9s;
+                }
+            }
+        }
+
+        &.Ativo {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+        }
+
+        &.content {
+
+            &.informaçao,
+            h2,
+            .descriçao,
+            .informaçao {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            &.moda-img {
+                &.img {
+                    transform: rotate(-20deg);
+                }
+            }
+        }
     }
 }
