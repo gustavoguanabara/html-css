@@ -14,10 +14,12 @@ main {
 
 h1 {
     color: darkgoldenrod;
+    border-bottom: 4px solid #9b850c;
 }
 
 h2 {
     color: rgb(125, 92, 8);
+    border-bottom: 2px solid #88b2ff;
 }
 
 aside {
@@ -38,7 +40,7 @@ aside img {
 }
 
 a, a:visited {
-    color: rgb(34, 34, 34);
+    color: rgb(13, 78, 175);
     font-weight: bolder;
 }
 
