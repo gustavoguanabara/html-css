@@ -8,6 +8,7 @@ Material público para o ensino básico de HTML5 e CSS3 para alunos iniciantes. 
 * [Código disponível para os exercícios](https://github.com/gustavoguanabara/html-css/tree/master/exercicios)
 * [Execute os exercícios aqui](https://gustavoguanabara.github.io/html-css/exercicios/)
 * [Resolva os desafios de HTML aqui](https://github.com/gustavoguanabara/html-css/tree/master/desafios)
+* [Aula pode ser acessada aqui](https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o)
 
 ## Direitos de uso
 
