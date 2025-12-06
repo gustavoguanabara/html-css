@@ -1,0 +1,26 @@
+/**style.css**/
+
+body{
+    background-color: #83E1AD;
+    font-size: large;
+    font-family: black;
+}
+
+header{
+    font-size: medium;
+    font-family: cursive;
+    background-color: #3ddc84;
+}
+
+h1{
+    font-size: medium;
+}
+
+p {
+  font-size: medium;
+  font: Arial, Helvetica, sans-serif, 2em;  
+}
+
+img{
+    width:300px
+}
